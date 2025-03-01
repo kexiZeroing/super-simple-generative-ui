@@ -1,5 +1,5 @@
 import "./globals.css";
-import { AI } from "./actions";
+import { AI } from "./action";
 
 export default function RootLayout({
   children,

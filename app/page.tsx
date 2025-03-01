@@ -1,16 +1,26 @@
-import { ChatForm } from "@/components/ChatForm";
-import { Messages } from "@/components/Messages";
+"use client";
 
-export const dynamic = "force-dynamic";
-export const maxDuration = 30;
+import { useUIState } from "ai/rsc";
+import { SearchForm } from "./SearchForm";
 
-export default async function Page() {
+export default function Home() {
+  const [result] = useUIState();
+
   return (
-    <main className="max-w-screen-lg flex flex-col mx-auto border-l border-r h-screen">
-      <Messages />
-      <div className="mt-auto">
-        <ChatForm />
-      </div>
+    <main>
+      <header
+        className={`
+        h-[155px] grid max-w-screen-lg mx-auto w-full items-center gap-4 p-4`}
+      >
+        Search Movies
+        <SearchForm shouldShowSuggestions={!result.length} />
+      </header>
+
+      {result.length > 0 && (
+        <div className="p-4 w-full flex flex-col text-left overflow-auto max-w-screen-lg mx-auto gap-4">
+          {result.map((m: any) => m.display)}
+        </div>
+      )}
     </main>
   );
 }
