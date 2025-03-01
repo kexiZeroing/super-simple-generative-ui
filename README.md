@@ -1,6 +1,6 @@
 # Gen UI Demo
 
-A demo of Gen UI from my [talk at JNation](https://www.youtube.com/live/kQqg2Z7AJCI?t=16m30s).
+This forked demo is based on Tejas Kumar's talk on [React Server Components in AI Applications](https://www.youtube.com/watch?v=fsAYMNl1Cj0). I changed to use [DeepSeek Provider](https://sdk.vercel.ai/providers/ai-sdk-providers/deepseek) as the language model here. It's helpful to check out https://github.com/nicoalbanese/ai-sdk-fundamentals to learn more about the fundamentals of the Vercel AI SDK.
 
 ## Running it locally
 
