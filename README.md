@@ -2,6 +2,8 @@
 
 This forked demo is based on Tejas Kumar's talk on [React Server Components in AI Applications](https://www.youtube.com/watch?v=fsAYMNl1Cj0). I changed it to show NBA players' draft year, pick number, and team info using [DeepSeek Provider](https://sdk.vercel.ai/providers/ai-sdk-providers/deepseek) as the language model here.
 
+<img src="screenshot.png" alt="NBA Player Search AI interface" width="600" />
+
 It's helpful to check out https://github.com/nicoalbanese/ai-sdk-fundamentals and https://github.com/vercel-labs/ai-sdk-preview-rsc-genui to learn more about AI SDK and generative UI.
 
 ## Running it locally

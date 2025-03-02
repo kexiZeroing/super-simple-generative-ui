@@ -33,9 +33,9 @@ export default function Home() {
         <div className="flex-1 overflow-hidden flex flex-col">
           <div
             ref={messagesContainerRef}
-            className="flex-1 overflow-y-auto space-y-4 pb-4 scroll-smooth"
+            className="flex-1 overflow-y-auto space-y-4 pb-20 scroll-smooth"
           >
-            {messages.length && (
+            {messages.length > 0 && (
               <>
                 {messages.map((message: { display?: React.ReactNode; content?: string; role?: string }, i: number) => (
                   <div
@@ -59,7 +59,7 @@ export default function Home() {
             <div ref={messagesEndRef} />
           </div>
 
-          <div className="sticky bottom-0 pt-4 pb-8 bg-gradient-to-t from-white dark:from-zinc-900">
+          <div className="fixed bottom-0 left-0 right-0 pt-4 pb-8 bg-gradient-to-t from-white dark:from-zinc-900">
             <SearchForm shouldShowSuggestions={!messages?.length} />
           </div>
         </div>
