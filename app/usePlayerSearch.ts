@@ -1,6 +1,6 @@
 import { useActions, useUIState } from "ai/rsc";
 
-export function useMovieSearch() {
+export function usePlayerSearch() {
   const [, setConversation] = useUIState();
   const { continueConversation } = useActions();
 

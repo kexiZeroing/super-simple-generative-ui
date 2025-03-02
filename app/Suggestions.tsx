@@ -1,11 +1,26 @@
 import { Suggestion } from "./Suggestion";
 
 export function Suggestions() {
+  const suggestions = [
+    {
+      id: "1",
+      text: "LeBron James",
+    },
+    {
+      id: "2",
+      text: "Kobe Bryant",
+    },
+    {
+      id: "3",
+      text: "Michael Jordan",
+    },
+  ];
+
   return (
-    <div className="grid md:grid-cols-3 gap-4">
-      <Suggestion>Scary movies set in the woods</Suggestion>
-      <Suggestion>Movies that feature large monsters</Suggestion>
-      <Suggestion>Movies with a strong female lead</Suggestion>
+    <div className="flex flex-wrap gap-2 justify-center">
+      {suggestions.map((suggestion) => (
+        <Suggestion key={suggestion.id} {...suggestion} />
+      ))}
     </div>
   );
 }

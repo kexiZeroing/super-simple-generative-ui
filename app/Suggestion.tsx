@@ -1,16 +1,24 @@
-import { PropsWithChildren } from "react";
-import { useMovieSearch } from "./useMovieSearch";
+"use client";
 
-export function Suggestion({ children }: PropsWithChildren) {
-  const { search } = useMovieSearch();
+import { usePlayerSearch } from "./usePlayerSearch";
+
+type Props = {
+  id: string;
+  text: string;
+};
+
+export function Suggestion({ text }: Props) {
+  const { search } = usePlayerSearch();
 
   return (
     <button
-      className="bg-[#250e09] rounded-lg text-white p-4"
-      onClick={() => search(children as string)}
-      type="button"
+      onClick={() => search(text)}
+      className="px-4 py-2 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 
+                dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 text-sm
+                hover:border-zinc-300 dark:hover:border-zinc-600 transition-colors
+                shadow-sm"
     >
-      {children}
+      {text}
     </button>
   );
 }

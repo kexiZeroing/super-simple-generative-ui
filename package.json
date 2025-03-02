@@ -11,8 +11,6 @@
   "dependencies": {
     "@ai-sdk/deepseek": "^0.1.12",
     "ai": "^4.1.46",
-    "dotenv": "^16.4.5",
-    "nanoid": "^5.0.7",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",

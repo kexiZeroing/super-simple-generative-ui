@@ -1,6 +1,8 @@
 # Gen UI Demo
 
-This forked demo is based on Tejas Kumar's talk on [React Server Components in AI Applications](https://www.youtube.com/watch?v=fsAYMNl1Cj0). I changed to use [DeepSeek Provider](https://sdk.vercel.ai/providers/ai-sdk-providers/deepseek) as the language model here. It's helpful to check out https://github.com/nicoalbanese/ai-sdk-fundamentals to learn more about the fundamentals of the Vercel AI SDK.
+This forked demo is based on Tejas Kumar's talk on [React Server Components in AI Applications](https://www.youtube.com/watch?v=fsAYMNl1Cj0). I changed it to show NBA players' draft year, pick number, and team info using [DeepSeek Provider](https://sdk.vercel.ai/providers/ai-sdk-providers/deepseek) as the language model here.
+
+It's helpful to check out https://github.com/nicoalbanese/ai-sdk-fundamentals and https://github.com/vercel-labs/ai-sdk-preview-rsc-genui to learn more about AI SDK and generative UI.
 
 ## Running it locally
 
@@ -11,7 +13,3 @@ Follow these steps to run the demo locally:
 3. Rename `.env.example` to `.env` and populate it with appropriate values
 4. Run `pnpm dev` to start the development server
 5. Open `http://localhost:3000` in your browser
-
-## Follow Up
-
-Feel free to [contact me on X](https://x.com/tejaskumar_) any time.
