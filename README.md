@@ -15,3 +15,6 @@ Follow these steps to run the demo locally:
 3. Rename `.env.example` to `.env` and populate it with appropriate values
 4. Run `pnpm dev` to start the development server
 5. Open `http://localhost:3000` in your browser
+
+## More to watch
+Tejas Kumar – React Server Components in AI Applications, React Advanced 2024: https://www.youtube.com/watch?v=qlEsdo1F004
